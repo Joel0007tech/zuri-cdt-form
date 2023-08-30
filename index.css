@@ -1,42 +1,58 @@
-*{
+@media only screen and (min-width:1250px){
+
+    *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
     background-color: rgb(83, 78, 78);
+    font-family: cursive;
+}
+h6{
+    font-family:cursive;
+    color: gray;
+    padding-bottom: 5px;
 }
 .form-background{
     background-color: hsl(0, 0%, 90%);
-    width:fit-content;
+    width:520px;
     margin: auto;
-    margin-top: 10px;
-    padding: 20px 20px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
 }
 .card-heading{
     background-color: brown;
-    width: fit-content;
+    width:400px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px 30px;
+    padding:5px 10px;
     border-radius: 15px;
-    position: relative;
-    top: 30px;
     gap: 30px;
     justify-content: space-between;
+    position: relative;
+    height: 200px;
+    z-index: 1;
+    top:70px;
 }
 .input-background{
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding-right:35px;
+    padding-left: 35px;
     gap: 30px;
-    width: fit-content;
+    width:fit-content;
     margin: auto;
-    padding-top:150px;
     border: 1px solid white;
     border-radius:15px;
+    position:relative;
+    bottom: 30px;
+    padding-top: 120px;
+    padding-bottom: 30px;
 }
 .card-number{
     display: flex;
@@ -53,15 +69,128 @@ body{
     display: flex;
     flex-direction: column;
 }
+.card-holder input{
+    width: 100px;
+    height: 30px;
+}
 .expiration{
     display: flex;
     flex-direction: column;
 }
+
 .expiration-box{
     display: flex;
     justify-content: space-between;
 }
+.expiration input{
+    width: 100px;
+    height: 30px;
+}
 .cvv{
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom:20px;
+    right:30px;
+}
+.mobile-view{
+    display: none;
+}
+}
+@media only screen and (max-width:428px){
+    .desktop-view{
+        display: none;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: rgb(83, 78, 78);
+    }
+    h6{
+        font-family:cursive;
+        color: gray;
+        padding-bottom: 5px;
+    }
+    .form-background{
+        background-color: hsl(0, 0%, 90%);
+        width:fit-content;
+        margin: auto;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top:50px;
+    }
+    .card-heading{
+        background-color: brown;
+        width:300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding:5px 10px;
+        border-radius: 15px;
+        gap: 30px;
+        justify-content: space-between;
+        position: relative;
+        height: 200px;
+        z-index: 1;
+        top:70px;
+    }
+    .input-background{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding-right:15px;
+        padding-left: 15px;
+        gap: 30px;
+        width:fit-content;
+        margin: auto;
+        border: 1px solid white;
+        border-radius:15px;
+        position:relative;
+        bottom: 30px;
+        padding-top: 120px;
+        padding-bottom: 30px;
+    }
+    .card-number{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-number_box{
+        display: flex;
+    }
+    .card-number_box input{
+        width: 80px;
+        height: 30px;
+    }
+    .card-holder{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-holder input{
+        width: 80px;
+        height: 30px;
+    }
+    .expiration{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .expiration-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .expiration input{
+        width: 80px;
+        height: 30px;
+    }
+    .cvv{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom:20px;
+        right:30px;
+    }
 }
