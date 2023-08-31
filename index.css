@@ -1,6 +1,5 @@
 @media only screen and (min-width:1250px){
-
-    *{
+ *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -14,6 +13,12 @@ h6{
     color: gray;
     padding-bottom: 5px;
 }
+.master-card{
+    display: none;
+}
+.american-card{
+    display: none;
+}
 .form-background{
     background-color: hsl(0, 0%, 90%);
     width:520px;
@@ -25,6 +30,7 @@ h6{
 }
 .card-heading{
     background-color: brown;
+    border: 2px solid gray;
     width:400px;
     margin: auto;
     display: flex;
@@ -45,7 +51,7 @@ h6{
     padding-right:35px;
     padding-left: 35px;
     gap: 30px;
-    width:fit-content;
+    width:470px;
     margin: auto;
     border: 1px solid white;
     border-radius:15px;
@@ -60,18 +66,20 @@ h6{
 }
 .card-number_box{
     display: flex;
+    gap: 15px;
 }
 .card-number_box input{
-    width: 100px;
-    height: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
 }
 .card-holder{
     display: flex;
     flex-direction: column;
 }
 .card-holder input{
-    width: 100px;
-    height: 30px;
+    height: 40px;
+    border-radius: 5px;
 }
 .expiration{
     display: flex;
@@ -81,17 +89,19 @@ h6{
 .expiration-box{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .expiration input{
-    width: 100px;
-    height: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
 }
 .cvv{
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom:20px;
-    right:30px;
+    bottom:25px;
+    border-radius: 5px;
 }
 .mobile-view{
     display: none;
