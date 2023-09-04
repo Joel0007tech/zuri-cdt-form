@@ -38,23 +38,17 @@
                 "
               ></div>
             </div>
-            <p
-              style="
-                font-size: 50px;
-                color: white;
-                position: relative;
-                bottom: 7px;
-              "
-            >
-              VISA
+              <img src="./visa-removebg-preview.png" style="position: relative; bottom: 30px; width: 200px; filter:brightness(0) invert(1); "
+             id="logo" >
             </p>
             <div class="master-card">
-              <p>MASTER</p>
+              <img src="./mastercard-removebg-preview.png" id="logo""></img>
             </div>
             <div class="american-card">
-              <p>AMERICAN</p>
+              <img src="./American-Express-Color.png" id="logo"></img>
             </div>
           </div>
+          <p style="text-align: center; word-spacing:30px; position: relative; bottom:25px;">9999 9999 9999 9999</p>
           <div
             style="display: flex; justify-content: space-between; gap: 100px"
           >
@@ -66,10 +60,10 @@
           <div class="card-number">
             <h6>CARD NUMBER</h6>
             <div class="card-number_box">
-                   <input type="text" name="" id="numberInput" onclick="cardValue()" required/>
-              <input type="text" name="" id="numberInput" required/>
-              <input type="text" name="" id="numberInput" required/>
-              <input type="text" name="" id="numberInput" required/>
+                   <input type="text" name="" id="numberInput" onclick="cardValue()" required maxlength="4"/>
+              <input type="text" name="" id="numberInput" required maxlength="4"/>
+              <input type="text" name="" id="numberInput" required maxlength="4"/>
+              <input type="text" name="" id="numberInput" required maxlength="4"/>
             </div>
             <div id="displayContent"><p>Card must be numbers*</p></div>
           </div>
@@ -109,7 +103,7 @@
               </div>
               <div class="cvv">
                 <h6>CVV</h6>
-                <input type="number" name="" id="" required/>
+                <input type="text" name="" id="" required/>
               </div>
             </div>
           </div>
@@ -176,7 +170,7 @@
           <div
             style="display: flex; justify-content: space-between; gap: 100px"
           >
-            <h3 style="font-size: medium;">BADMUS AMMAN DARE</h3>
+            <h3 style="font-size:15px;">BADMUS AMMAN DARE</h3>
             <p>EXPIRES 11/99</p>
           </div>
         </div>
@@ -184,22 +178,24 @@
           <div class="card-number">
             <h6>CARD NUMBER</h6>
             <div class="card-number_box">
-              <input type="number" name="" id="" required/>
-              <input type="number" name="" id="" required/>
-              <input type="number" name="" id="" required/>
-              <input type="number" name="" id="" required/>
+              <input type="text" name="" id="" onclick="cardValuemobile()" required maxlength="4"/>
+              <input type="text" name="" id="" required maxlength="4"/>
+              <input type="text" name="" id="" required maxlength="4"/>
+              <input type="text" name="" id="" required maxlength="4"/>
             </div>
+            <div id="displayContentmobile"><p>Card must be numbers*</p></div>
           </div>
           <div class="card-holder">
             <h6>CARD HOLDER</h6>
-            <input type="text" name="" id="" required/>
+            <input type="text" name="" id="" onclick="cardHoldermobile()" required/>
+            <div id="displayHoldermobile"><p>Name must be at least first name, and last name*</p></div>
           </div>
           <div class="expiration">
             <h6>EXPIRATION DATE</h6>
             <div class="expiration-box">
               <div style="display: flex; gap: 2px">
                 <div>
-                  <input type="number" name="" id="" required/>
+                  <input type="text" name="" id="" required/>
                   <span
                     class="material-symbols-outlined"
                     id="dropdown-btn"
@@ -211,7 +207,7 @@
                   </span>
                 </div>
                 <div>
-                  <input type="number" name="" id="" required/>
+                  <input type="text" name="" id="" required/>
                   <span
                     class="material-symbols-outlined"
                     id="dropdown-btn"
@@ -225,7 +221,7 @@
               </div>
               <div class="cvv-mobile">
                 <h6>CVV</h6>
-                <input type="number" name="" id="" required/>
+                <input type="text" name="" id="" required/>
               </div>
             </div>
           </div>

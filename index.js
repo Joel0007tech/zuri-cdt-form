@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 const numberInput = document.getElementById("numberInput");
 const errorMsg = document.getElementById("errorMsg");
+const logo = document.getElementById("logo");
+const inputBoxes = document.querySelectorAll("input");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -26,6 +28,33 @@ form.addEventListener("submit", function(event) {
       errorMsg.textContent = "";
     }
   });
+  
+numberInput.addEventListener("input", (event) => {
+  const inputValue = event.target.value;
+  
+  if (/^\d+$/.test(inputValue)) {
+    const number = Number(inputValue);
+    
+    if (number % 2 === 0) {
+      logo.src = "American-Express-Color.png";
+    } else {
+      logo.src = "mastercard-removebg-preview.png";
+    }
+  } else {
+    logo.src = "visa-removebg-preview.png";
+  }
+});
+
+inputBoxes.forEach((input, index) => {
+  input.addEventListener("input", (event) => {
+    const currentInput = event.target;
+    const nextInput = inputBoxes[index + 1];
+
+    if (currentInput.value.length === 4 && nextInput) {
+      nextInput.focus();
+    }
+  });
+});
 
   function cardValue() {
     var displayContent = document.getElementById("displayContent");
@@ -34,4 +63,12 @@ form.addEventListener("submit", function(event) {
   function cardHolder() {
     var displayHolder = document.getElementById("displayHolder");
     displayHolder.style.display = displayHolder.style.display === "block" ? "none" :"block";
+  }
+  function cardValuemobile() {
+    var displayContentmobile = document.getElementById("displayContentmobile");
+    displayContentmobile.style.display = displayContentmobile.style.display === "block" ? "none" :"block";
+  }
+  function cardHoldermobile() {
+    var displayHoldermobile = document.getElementById("displayHoldermobile");
+    displayHoldermobile.style.display = displayHoldermobile.style.display === "block" ? "none" :"block";
   }

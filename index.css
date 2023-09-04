@@ -29,10 +29,11 @@ h6{
     background-color: hsl(0, 0%, 90%);
     width:520px;
     margin: auto;
-    height:fit-content;
+    height:710px;
     display: flex;
     flex-direction: column;
-    margin-top:50px;
+    margin-top:10px;
+    overflow: hidden;
 }
 .card-heading{
     background-color: brown;
@@ -43,12 +44,15 @@ h6{
     flex-direction: column;
     padding:5px 10px;
     border-radius: 15px;
-    gap: 30px;
     justify-content: space-between;
     position: relative;
-    height: 200px;
+    height: 230px;
     z-index: 1;
-    top:70px;
+    top:30px;
+}
+.master-card{
+    position: relative;
+    top: 20px;
 }
 .input-background{
     background-color: white;
@@ -62,9 +66,9 @@ h6{
     border: 1px solid white;
     border-radius:15px;
     position:relative;
-    bottom: 30px;
-    padding-top: 120px;
-    padding-bottom: 30px;
+    bottom: 100px;
+    padding-top: 140px;
+    padding-bottom: 10px;
 }
 #displayContent{
     display: none;
@@ -170,7 +174,7 @@ h6{
     }
     .card-heading{
         background-color: brown;
-        width:300px;
+        width:350px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -182,6 +186,22 @@ h6{
         height: 200px;
         z-index: 1;
         top:70px;
+    }
+    #displayContentmobile{
+        display: none;
+        position:relative;
+        color:black;
+        top:4px;
+        font-size: small;
+        font-style: italic;
+    }
+    #displayHoldermobile{
+        display: none;
+        position:relative;
+        color:black;
+        top:4px;
+        font-size: small;
+        font-style: italic;
     }
     .input-background{
         background-color: white;
@@ -198,6 +218,8 @@ h6{
         bottom: 30px;
         padding-top: 120px;
         padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .card-number{
         display: flex;
@@ -216,7 +238,7 @@ h6{
         flex-direction: column;
     }
     .card-holder input{
-        width: 80px;
+        width: 330px;
         height: 30px;
     }
     .expiration{
