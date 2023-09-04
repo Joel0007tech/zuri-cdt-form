@@ -3,6 +3,7 @@ const numberInput = document.getElementById("numberInput");
 const errorMsg = document.getElementById("errorMsg");
 const logo = document.getElementById("logo");
 const inputBoxes = document.querySelectorAll("input");
+const successMsg = document.getElementById("successMsg");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -28,18 +29,36 @@ form.addEventListener("submit", function(event) {
       errorMsg.textContent = "";
     }
   });
+ 
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const inputValue = numberInput.value;
+
+  if (!/^\d{16}$/.test(inputValue)) {
+    errorMsg.textContent = "Card number must be 16 numbers";
+    successMsg.textContent = "";
+  } else {
+    errorMsg.textContent = "";
+    successMsg.textContent = "Payment successful!";
+    // Perform additional actions if needed
+  }
+});
+
   
-numberInput.addEventListener("input", (event) => {
+numberInput.addEventListener("input", function(event) {
   const inputValue = event.target.value;
+  const number = parseInt(inputValue, 10);
   
-  if (/^\d+$/.test(inputValue)) {
-    const number = Number(inputValue);
-    
-    if (number % 2 === 0) {
-      logo.src = "American-Express-Color.png";
-    } else {
-      logo.src = "mastercard-removebg-preview.png";
-    }
+  if (number === 2) {
+    logo.src = "mastercard-removebg-preview.png";
+  } else if (number === 3) {
+    logo.src = "American-Express-Color.png";
+  } else if (number === 4) {
+    logo.src = "visa-removebg-preview.png";
+  } else if(number === 5) {
+    logo.src = "mastercard-removebg-preview.png";
   } else {
     logo.src = "visa-removebg-preview.png";
   }
