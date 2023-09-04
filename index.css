@@ -177,7 +177,12 @@ h6{
     .american-card{
         display: none;
     }
-    
+    .img-visa{
+        position: relative;
+         bottom: 30px;
+          width: 200px; 
+          filter:brightness(0) invert(1);
+    }
     h6{
         font-family:cursive;
         color: gray;
@@ -193,7 +198,7 @@ h6{
         margin-top:50px;
     }
     .card-heading{
-        background-color:brown;
+        background-image: linear-gradient(brown,rgb(244, 197, 197));
         width:350px;
         margin: auto;
         display: flex;
