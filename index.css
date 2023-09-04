@@ -26,7 +26,7 @@ h6{
     display: none;
 }
 .form-background{
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 4%, 66%);
     width:520px;
     margin: auto;
     height:710px;
@@ -35,8 +35,13 @@ h6{
     margin-top:10px;
     overflow: hidden;
 }
+#months{
+    display: none;
+    position:absolute;
+
+}
 .card-heading{
-    background-color: brown;
+    background-image: linear-gradient(brown,rgb(244, 197, 197));
     border: 2px solid gray;
     width:400px;
     margin: auto;
@@ -95,11 +100,16 @@ h6{
 .card-number_box{
     display: flex;
     gap: 15px;
+    background-color: #fff;
+  box-shadow: 0 4px 6px rgba(182, 178, 178, 0.1);
+    
 }
 .card-number_box input{
     width: 89px;
     height: 40px;
     border-radius: 5px;
+    box-shadow: 0.5px 2px 2px 0.5px gray;
+    border: 3px solid gray;
 }
 .card-holder{
     display: flex;
@@ -108,6 +118,8 @@ h6{
 .card-holder input{
     height: 40px;
     border-radius: 5px;
+    box-shadow: 0.5px 2px 2px 0.5px gray;
+    border: 3px solid gray;
 }
 .expiration{
     display: flex;
@@ -123,6 +135,8 @@ h6{
     width: 90px;
     height: 40px;
     border-radius: 5px;
+    box-shadow: 0.5px 2px 2px 0.5px gray;
+    border: 3px solid gray;
 }
 .cvv{
     display: flex;
@@ -130,6 +144,10 @@ h6{
     position: relative;
     bottom:20px;
     border-radius: 5px;
+}
+.cvv input{
+    box-shadow: 0.5px 2px 2px 0.5px gray;
+    border: 3px solid gray;
 }
 .mobile-view{
     display: none;
@@ -166,7 +184,7 @@ h6{
         padding-bottom: 5px;
     }
     .form-background{
-        background-color: hsl(0, 0%, 90%);
+        background-color: hsl(0, 4%, 66%);
         width:fit-content;
         margin: auto;
         height:fit-content;

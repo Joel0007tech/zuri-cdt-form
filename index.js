@@ -13,10 +13,8 @@ form.addEventListener("submit", function(event) {
     if (!/^\d{16}$/.test(inputValue)) {
       errorMsg.textContent = "Card number must be 16 numbers";
     } else {
-      // Perform further actions if the input is valid
-      // For example, submit the form or execute other logic
       errorMsg.textContent = "";
-      form.submit(); // Uncomment if you want to submit the form
+      form.submit();
     }
   });
   
@@ -42,11 +40,9 @@ form.addEventListener("submit", function(event) {
   } else {
     errorMsg.textContent = "";
     successMsg.textContent = "Payment successful!";
-    // Perform additional actions if needed
   }
 });
-
-  
+ 
 numberInput.addEventListener("input", function(event) {
   const inputValue = event.target.value;
   const number = parseInt(inputValue, 10);
@@ -90,4 +86,8 @@ inputBoxes.forEach((input, index) => {
   function cardHoldermobile() {
     var displayHoldermobile = document.getElementById("displayHoldermobile");
     displayHoldermobile.style.display = displayHoldermobile.style.display === "block" ? "none" :"block";
+  }
+  function toggleDrop() {
+    var displayContenttoggle = document.getElementById("months");
+    displayContenttoggle.style.display = months.style.display === "block" ? "none" :"block";
   }
