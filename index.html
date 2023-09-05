@@ -80,34 +80,36 @@
             <div class="expiration-box">
               <div style="display: flex; gap: 15px">
                 <div>
-                  <input type="text" name="" id="" required/>
-                  <span
-                    class="material-symbols-outlined"
-                    id="dropdown-btn"
-                    onmouseover="toggleDrop()"
-                    ,
-                    onmouseleave="leaveSecond()"
-                  >
-                    arrow_drop_down
-                  </span>
+                  <input list="MM" placeholder="MM" style="text-align: center;">
+                  <datalist id="MM">
+                    <option value="01"></option>
+                    <option value="02"></option>
+                    <option value="03"></option>
+                    <option value="04"></option>
+                    <option value="05"></option>
+                    <option value="06"></option>
+                    <option value="07"></option>
+                    <option value="08"></option>
+                    <option value="09"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                  </datalist>
                 </div>
                 <div>
-                  <select id="monthDropdown">
-                    <option style="text-align:center;">YY</option>
-                    <option value="23">23</option>
-                    <option value=24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value=27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value=30">30</option>
-                    <option value="31">31</option>
-                    <option value="32">32</option>
-                    <option value=33">33</option>
-                    <option value="34">34</option>
-                  </select>
-                  <div id="monthSelection"></div>
+                  <input list="YY" placeholder="YY" style="text-align: center;">
+                  <datalist id="YY">
+                    <option value="23"></option>
+                    <option value="24"></option>
+                    <option value="25"></option>
+                    <option value="26"></option>
+                    <option value="27"></option>
+                    <option value="28"></option>
+                    <option value="90"></option>
+                    <option value="91"></option>
+                    <option value="98"></option>
+                    <option value="99"></option>
+                  </datalist>
                 </div>
               </div>
               <div class="cvv">
@@ -200,31 +202,39 @@
           <div class="expiration">
             <h6>EXPIRATION DATE</h6>
             <div class="expiration-box">
-              <div style="display: flex; gap: 2px">
+              <div style="display: flex; gap:15px">
                 <div>
-                  <input type="text" name="" id="" required/>
-                  <span
-                    class="material-symbols-outlined"
-                    id="dropdown-btn"
-                    onmouseover="toggleDrop()"
-                    ,
-                    onmouseleave="leaveSecond()"
-                  >
-                    arrow_drop_down
-                  </span>
-                </div>
-                <div>
-                  <input type="text" name="" id="" required/>
-                  <span
-                    class="material-symbols-outlined"
-                    id="dropdown-btn"
-                    onmouseover="toggleDrop()"
-                    ,
-                    onmouseleave="leaveSecond()"
-                  >
-                    arrow_drop_down
-                  </span>
-                </div>
+                    <input list="MM" placeholder="MM" style="text-align: center;">
+                    <datalist id="MM">
+                      <option value="01"></option>
+                      <option value="02"></option>
+                      <option value="03"></option>
+                      <option value="04"></option>
+                      <option value="05"></option>
+                      <option value="06"></option>
+                      <option value="07"></option>
+                      <option value="08"></option>
+                      <option value="09"></option>
+                      <option value="10"></option>
+                      <option value="11"></option>
+                      <option value="12"></option>
+                    </datalist>
+                  </div>
+                  <div>
+                    <input list="YY" placeholder="YY" style="text-align: center;">
+                    <datalist id="YY">
+                      <option value="23"></option>
+                      <option value="24"></option>
+                      <option value="25"></option>
+                      <option value="26"></option>
+                      <option value="27"></option>
+                      <option value="28"></option>
+                      <option value="90"></option>
+                      <option value="91"></option>
+                      <option value="98"></option>
+                      <option value="99"></option>
+                    </datalist>
+                  </div>
               </div>
               <div class="cvv-mobile">
                 <h6>CVV</h6>
