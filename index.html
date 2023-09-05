@@ -80,31 +80,16 @@
             <div class="expiration-box">
               <div style="display: flex; gap: 15px">
                 <div>
-                 
-                    <span
-                    class="material-symbols-outlined"
-                    id="monthDropdown">
-                    arrow_drop_down
-                    <select>
-                      <option style="text-align:center;">MM</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                  </select>
-                  </span>
-                    
-                  <div id="monthSelection"></div>
                   <input type="text" name="" id="" required/>
-
+                  <span
+                    class="material-symbols-outlined"
+                    id="dropdown-btn"
+                    onmouseover="toggleDrop()"
+                    ,
+                    onmouseleave="leaveSecond()"
+                  >
+                    arrow_drop_down
+                  </span>
                 </div>
                 <div>
                   <select id="monthDropdown">
