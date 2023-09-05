@@ -257,6 +257,9 @@ h6{
     .card-number_box input{
         width: 80px;
         height: 30px;
+        box-shadow: 0.5px 2px 2px 0.5px gray;
+        border: 3px solid gray;
+        border-radius: 5px;
     }
     .card-holder{
         display: flex;
@@ -265,6 +268,9 @@ h6{
     .card-holder input{
         width: 330px;
         height: 30px;
+        box-shadow: 0.5px 2px 2px 0.5px gray;
+        border: 3px solid gray;
+        border-radius: 5px;
     }
     .expiration{
         display: flex;
@@ -278,6 +284,9 @@ h6{
     .expiration input{
         width: 80px;
         height: 30px;
+        box-shadow: 0.5px 2px 2px 0.5px gray;
+        border: 3px solid gray;
+        border-radius: 5px;
     }
     .cvv-mobile{
         display: flex;
@@ -285,5 +294,10 @@ h6{
         position: relative;
         bottom:16px;
         right:30px;
+    }
+    .cvv input{
+        box-shadow: 0.5px 2px 2px 0.5px gray;
+        border: 3px solid gray;
+        border-radius: 5px;
     }
 }

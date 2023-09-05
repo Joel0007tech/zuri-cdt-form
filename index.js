@@ -4,6 +4,8 @@ const errorMsg = document.getElementById("errorMsg");
 const logo = document.getElementById("logo");
 const inputBoxes = document.querySelectorAll("input");
 const successMsg = document.getElementById("successMsg");
+const monthDropdown = document.getElementById("monthDropdown");
+const monthSelection = document.getElementById("monthSelection");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -69,6 +71,10 @@ inputBoxes.forEach((input, index) => {
       nextInput.focus();
     }
   });
+});
+
+monthDropdown.addEventListener("change", function() {
+  const selectedMonth = monthDropdown.value;
 });
 
   function cardValue() {
